@@ -1,0 +1,37 @@
+<html >
+   <head>
+      <title>Array Manipulation - Multiply After Subtracting 1</title>
+      <script type = "text/javascript">
+	     var res;
+
+         onload = function() {
+		    var ar = [2, 6, 8, 10] ;
+			res= document.getElementById("result");
+			res.value="";
+			ar = manipulateArray(ar);
+			res.value += ar;
+
+		};
+
+		function manipulateArray(a) {
+			var s=1;
+			for (var i=0; i<a.length; i++){
+				a[i] = a[i] - 1;
+				s*=a[i];
+				res.value += a[i];
+				if (i== (a.length-1))
+					res.value += " =\n------\n";
+				else res.value += " *\n";
+			}
+			return s;
+		}
+
+      </script>
+   </head>
+   <body >
+      <textarea id= "result"; rows="7" cols="20">
+	  
+	 </textarea>
+
+    </body>
+</html>
