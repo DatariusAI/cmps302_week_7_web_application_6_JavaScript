@@ -9,7 +9,7 @@
          var interval;
           
             // 1000 milliseconds = 1 second
-            interval = window.setInterval( "updateTime()", 1000 );
+            interval = window.setInterval( updateTime, 1000 );
 
          // called every 1000 ms to update the timer
          function updateTime() {
@@ -20,7 +20,6 @@
                clearInterval(interval);
             }
          } // end function updateTime
-         // -->
       </script>
    
 </html>
