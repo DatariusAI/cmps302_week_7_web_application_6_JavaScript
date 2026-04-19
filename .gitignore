@@ -1,0 +1,27 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Security baseline
+*.pem
+*.key
+id_rsa*
+credentials.json
+secrets.yaml
+*.sqlite
+*.db
+
+# Node
+node_modules/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
